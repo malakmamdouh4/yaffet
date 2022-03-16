@@ -29,7 +29,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/getLastprice',[ShowController::class,'getLastprice']);
 
 // get historical price for all metals
-Route::get('/getHistPrice/{metalName}',[ShowController::class,'getHistPrice']);           ////////                  User                 /////////
+Route::get('/getHistPrice/{metalName}',[ShowController::class,'getHistPrice']);
+
+
+         ////////                  User                 /////////
 
 // save token from user device
 Route::post('/getToken',[UserController::class,'getToken']);

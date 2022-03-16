@@ -21,8 +21,6 @@ Route::get('/', function () {
 });
 
 
-///////                 Admin                ////////
-
 // call last prices of all metals from provider ( metal_api )
 Route::get('/saveLastPrice',[AdminController::class,'saveLastPrice']);
 
@@ -36,15 +34,3 @@ Route::get('/send_notification',[AdminController::class,'handleSendNotification'
 Route::get('/saveLastCurrency',[AdminController::class,'saveLastCurrency']);
 
 
-
-
-
-
-
-
-
-// send greater alert to user
-//Route::get('/sendGreaterAlert',[AdminController::class,'sendGreaterAlert']);
-//
-//// send less alert to user
-//Route::get('/sendLessAlert',[AdminController::class,'sendLessAlert']);
